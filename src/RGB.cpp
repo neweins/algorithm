@@ -19,7 +19,7 @@ int solve()
         sum[1][i] += h[1][i] + min(sum[0][i-1], sum[2][i-1]);
         sum[2][i] += h[2][i] + min(sum[0][i-1], sum[1][i-1]);
 
-        // printf("%d %d %d \n", sum[0][i], sum[1][i], sum[2][i]);
+        printf("%d %d %d \n", sum[0][i], sum[1][i], sum[2][i]);
     }
 
     return min(min(sum[0][N-1], sum[1][N-1]), sum[2][N-1]);
