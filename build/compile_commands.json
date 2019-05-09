@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/joongkeun/algorithm/build",
-  "command": "/usr/bin/g++-5    -I/home/joongkeun/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/algorithm.dir/src/RGB.cpp.o -c /home/joongkeun/algorithm/src/RGB.cpp",
-  "file": "/home/joongkeun/algorithm/src/RGB.cpp"
+  "command": "/usr/bin/g++-5    -I/home/joongkeun/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.o -c /home/joongkeun/algorithm/src/2×n_tiling.cpp",
+  "file": "/home/joongkeun/algorithm/src/2×n_tiling.cpp"
 }
 ]

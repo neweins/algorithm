@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algorithm.dir/src/RGB.cpp.o"
+  "CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.o"
   "algorithm.pdb"
   "algorithm"
 )

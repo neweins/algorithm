@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/RGB.cpp
+/home/joongkeun/algorithm/src/2×n_tiling.cpp
 stdio.h
 -
 algorithm

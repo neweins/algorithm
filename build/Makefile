@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/RGB.o: src/RGB.cpp.o
+src/2×n_tiling.o: src/2×n_tiling.cpp.o
 
-.PHONY : src/RGB.o
+.PHONY : src/2×n_tiling.o
 
 # target to build an object file
-src/RGB.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/RGB.cpp.o
-.PHONY : src/RGB.cpp.o
+src/2×n_tiling.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.o
+.PHONY : src/2×n_tiling.cpp.o
 
-src/RGB.i: src/RGB.cpp.i
+src/2×n_tiling.i: src/2×n_tiling.cpp.i
 
-.PHONY : src/RGB.i
+.PHONY : src/2×n_tiling.i
 
 # target to preprocess a source file
-src/RGB.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/RGB.cpp.i
-.PHONY : src/RGB.cpp.i
+src/2×n_tiling.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.i
+.PHONY : src/2×n_tiling.cpp.i
 
-src/RGB.s: src/RGB.cpp.s
+src/2×n_tiling.s: src/2×n_tiling.cpp.s
 
-.PHONY : src/RGB.s
+.PHONY : src/2×n_tiling.s
 
 # target to generate assembly for a file
-src/RGB.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/RGB.cpp.s
-.PHONY : src/RGB.cpp.s
+src/2×n_tiling.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.s
+.PHONY : src/2×n_tiling.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/RGB.o"
-	@echo "... src/RGB.i"
-	@echo "... src/RGB.s"
+	@echo "... src/2×n_tiling.o"
+	@echo "... src/2×n_tiling.i"
+	@echo "... src/2×n_tiling.s"
 .PHONY : help
 
 
