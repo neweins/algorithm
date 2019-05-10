@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/2×n_tiling.o: src/2×n_tiling.cpp.o
+src/The_Triangle.o: src/The_Triangle.cpp.o
 
-.PHONY : src/2×n_tiling.o
+.PHONY : src/The_Triangle.o
 
 # target to build an object file
-src/2×n_tiling.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.o
-.PHONY : src/2×n_tiling.cpp.o
+src/The_Triangle.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/The_Triangle.cpp.o
+.PHONY : src/The_Triangle.cpp.o
 
-src/2×n_tiling.i: src/2×n_tiling.cpp.i
+src/The_Triangle.i: src/The_Triangle.cpp.i
 
-.PHONY : src/2×n_tiling.i
+.PHONY : src/The_Triangle.i
 
 # target to preprocess a source file
-src/2×n_tiling.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.i
-.PHONY : src/2×n_tiling.cpp.i
+src/The_Triangle.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/The_Triangle.cpp.i
+.PHONY : src/The_Triangle.cpp.i
 
-src/2×n_tiling.s: src/2×n_tiling.cpp.s
+src/The_Triangle.s: src/The_Triangle.cpp.s
 
-.PHONY : src/2×n_tiling.s
+.PHONY : src/The_Triangle.s
 
 # target to generate assembly for a file
-src/2×n_tiling.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/2×n_tiling.cpp.s
-.PHONY : src/2×n_tiling.cpp.s
+src/The_Triangle.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/The_Triangle.cpp.s
+.PHONY : src/The_Triangle.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/2×n_tiling.o"
-	@echo "... src/2×n_tiling.i"
-	@echo "... src/2×n_tiling.s"
+	@echo "... src/The_Triangle.o"
+	@echo "... src/The_Triangle.i"
+	@echo "... src/The_Triangle.s"
 .PHONY : help
 
 

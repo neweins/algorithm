@@ -6,8 +6,10 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/2×n_tiling.cpp
+/home/joongkeun/algorithm/src/The_Triangle.cpp
 stdio.h
+-
+stdint.h
 -
 algorithm
 -
