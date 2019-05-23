@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/The_Triangle.o: src/The_Triangle.cpp.o
+src/DFSnBFS.o: src/DFSnBFS.cpp.o
 
-.PHONY : src/The_Triangle.o
+.PHONY : src/DFSnBFS.o
 
 # target to build an object file
-src/The_Triangle.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/The_Triangle.cpp.o
-.PHONY : src/The_Triangle.cpp.o
+src/DFSnBFS.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o
+.PHONY : src/DFSnBFS.cpp.o
 
-src/The_Triangle.i: src/The_Triangle.cpp.i
+src/DFSnBFS.i: src/DFSnBFS.cpp.i
 
-.PHONY : src/The_Triangle.i
+.PHONY : src/DFSnBFS.i
 
 # target to preprocess a source file
-src/The_Triangle.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/The_Triangle.cpp.i
-.PHONY : src/The_Triangle.cpp.i
+src/DFSnBFS.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.i
+.PHONY : src/DFSnBFS.cpp.i
 
-src/The_Triangle.s: src/The_Triangle.cpp.s
+src/DFSnBFS.s: src/DFSnBFS.cpp.s
 
-.PHONY : src/The_Triangle.s
+.PHONY : src/DFSnBFS.s
 
 # target to generate assembly for a file
-src/The_Triangle.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/The_Triangle.cpp.s
-.PHONY : src/The_Triangle.cpp.s
+src/DFSnBFS.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.s
+.PHONY : src/DFSnBFS.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/The_Triangle.o"
-	@echo "... src/The_Triangle.i"
-	@echo "... src/The_Triangle.s"
+	@echo "... src/DFSnBFS.o"
+	@echo "... src/DFSnBFS.i"
+	@echo "... src/DFSnBFS.s"
 .PHONY : help
 
 

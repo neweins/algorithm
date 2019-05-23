@@ -6,10 +6,16 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/The_Triangle.cpp
+/home/joongkeun/algorithm/src/DFSnBFS.cpp
+iostream
+-
 stdio.h
 -
-stdint.h
+vector
+-
+queue
+-
+stack
 -
 algorithm
 -

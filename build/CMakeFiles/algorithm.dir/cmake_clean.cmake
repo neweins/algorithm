@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/algorithm.dir/src/The_Triangle.cpp.o"
+  "CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o"
   "algorithm.pdb"
   "algorithm"
 )

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/joongkeun/algorithm/src/The_Triangle.cpp" "/home/joongkeun/algorithm/build/CMakeFiles/algorithm.dir/src/The_Triangle.cpp.o"
+  "/home/joongkeun/algorithm/src/DFSnBFS.cpp" "/home/joongkeun/algorithm/build/CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
