@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/DFSnBFS.o: src/DFSnBFS.cpp.o
+src/mine.o: src/mine.cpp.o
 
-.PHONY : src/DFSnBFS.o
+.PHONY : src/mine.o
 
 # target to build an object file
-src/DFSnBFS.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o
-.PHONY : src/DFSnBFS.cpp.o
+src/mine.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.o
+.PHONY : src/mine.cpp.o
 
-src/DFSnBFS.i: src/DFSnBFS.cpp.i
+src/mine.i: src/mine.cpp.i
 
-.PHONY : src/DFSnBFS.i
+.PHONY : src/mine.i
 
 # target to preprocess a source file
-src/DFSnBFS.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.i
-.PHONY : src/DFSnBFS.cpp.i
+src/mine.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.i
+.PHONY : src/mine.cpp.i
 
-src/DFSnBFS.s: src/DFSnBFS.cpp.s
+src/mine.s: src/mine.cpp.s
 
-.PHONY : src/DFSnBFS.s
+.PHONY : src/mine.s
 
 # target to generate assembly for a file
-src/DFSnBFS.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.s
-.PHONY : src/DFSnBFS.cpp.s
+src/mine.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.s
+.PHONY : src/mine.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/DFSnBFS.o"
-	@echo "... src/DFSnBFS.i"
-	@echo "... src/DFSnBFS.s"
+	@echo "... src/mine.o"
+	@echo "... src/mine.i"
+	@echo "... src/mine.s"
 .PHONY : help
 
 

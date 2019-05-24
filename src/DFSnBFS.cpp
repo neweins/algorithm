@@ -1,4 +1,5 @@
 // https://www.acmicpc.net/problem/1260
+// 그래프 https://sarah950716.tistory.com/12?category=598483
 
 #include<iostream>
 #include <stdio.h>
@@ -12,7 +13,7 @@ using namespace std;
 int N; //정점의 개수
 int M; //간선의 개수
 int V; //시작 정점
-vector<int> adj[10000+10]; // 그래프 https://sarah950716.tistory.com/12?category=598483
+vector<int> adj[10000+10]; //간선의 갯수와 같다.
 
 int recur_visited[1000+10]={0,};
 void recursive_dfs(int v)
@@ -37,7 +38,7 @@ void dfs()
         s.pop();
 
         if(visited[v] ==0){
-            visited[v] =1;
+            visited[v] =1; // pop할때 방문체크
             printf("%d ", v);
         }
     
@@ -55,7 +56,8 @@ void bfs()
     int visited[1000+10]={0,};
 
     que.push(V); // 시작 정점
-    visited[V] = 1;
+    visited[V] = 1; // push할 때 방문체크
+
     while(!que.empty()){
         int v = que.front();
         que.pop();
@@ -63,8 +65,8 @@ void bfs()
 
         for(size_t i=0; i<adj[v].size(); ++i){
             if(visited[adj[v][i]] == 0){ 
-                visited[adj[v][i]] =1;
                 que.push(adj[v][i]);
+                visited[adj[v][i]] =1;
             }
         }
     }

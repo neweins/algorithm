@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/joongkeun/algorithm/build",
-  "command": "/usr/bin/g++-5    -I/home/joongkeun/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o -c /home/joongkeun/algorithm/src/DFSnBFS.cpp",
-  "file": "/home/joongkeun/algorithm/src/DFSnBFS.cpp"
+  "command": "/usr/bin/g++-5    -I/home/joongkeun/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/algorithm.dir/src/mine.cpp.o -c /home/joongkeun/algorithm/src/mine.cpp",
+  "file": "/home/joongkeun/algorithm/src/mine.cpp"
 }
 ]

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/DFSnBFS.cpp
+/home/joongkeun/algorithm/src/mine.cpp
 iostream
 -
 stdio.h

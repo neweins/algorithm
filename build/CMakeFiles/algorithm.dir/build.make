@@ -57,38 +57,38 @@ include CMakeFiles/algorithm.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/algorithm.dir/flags.make
 
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o: CMakeFiles/algorithm.dir/flags.make
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o: ../src/DFSnBFS.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joongkeun/algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o"
-	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o -c /home/joongkeun/algorithm/src/DFSnBFS.cpp
+CMakeFiles/algorithm.dir/src/mine.cpp.o: CMakeFiles/algorithm.dir/flags.make
+CMakeFiles/algorithm.dir/src/mine.cpp.o: ../src/mine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joongkeun/algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/algorithm.dir/src/mine.cpp.o"
+	/usr/bin/g++-5   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/algorithm.dir/src/mine.cpp.o -c /home/joongkeun/algorithm/src/mine.cpp
 
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.i"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joongkeun/algorithm/src/DFSnBFS.cpp > CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.i
+CMakeFiles/algorithm.dir/src/mine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/algorithm.dir/src/mine.cpp.i"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joongkeun/algorithm/src/mine.cpp > CMakeFiles/algorithm.dir/src/mine.cpp.i
 
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.s"
-	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joongkeun/algorithm/src/DFSnBFS.cpp -o CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.s
+CMakeFiles/algorithm.dir/src/mine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/algorithm.dir/src/mine.cpp.s"
+	/usr/bin/g++-5  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joongkeun/algorithm/src/mine.cpp -o CMakeFiles/algorithm.dir/src/mine.cpp.s
 
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.requires:
+CMakeFiles/algorithm.dir/src/mine.cpp.o.requires:
 
-.PHONY : CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.requires
+.PHONY : CMakeFiles/algorithm.dir/src/mine.cpp.o.requires
 
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.provides: CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.requires
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.provides.build
-.PHONY : CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.provides
+CMakeFiles/algorithm.dir/src/mine.cpp.o.provides: CMakeFiles/algorithm.dir/src/mine.cpp.o.requires
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.o.provides.build
+.PHONY : CMakeFiles/algorithm.dir/src/mine.cpp.o.provides
 
-CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.provides.build: CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o
+CMakeFiles/algorithm.dir/src/mine.cpp.o.provides.build: CMakeFiles/algorithm.dir/src/mine.cpp.o
 
 
 # Object files for target algorithm
 algorithm_OBJECTS = \
-"CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o"
+"CMakeFiles/algorithm.dir/src/mine.cpp.o"
 
 # External object files for target algorithm
 algorithm_EXTERNAL_OBJECTS =
 
-algorithm: CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o
+algorithm: CMakeFiles/algorithm.dir/src/mine.cpp.o
 algorithm: CMakeFiles/algorithm.dir/build.make
 algorithm: CMakeFiles/algorithm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joongkeun/algorithm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable algorithm"
@@ -99,7 +99,7 @@ CMakeFiles/algorithm.dir/build: algorithm
 
 .PHONY : CMakeFiles/algorithm.dir/build
 
-CMakeFiles/algorithm.dir/requires: CMakeFiles/algorithm.dir/src/DFSnBFS.cpp.o.requires
+CMakeFiles/algorithm.dir/requires: CMakeFiles/algorithm.dir/src/mine.cpp.o.requires
 
 .PHONY : CMakeFiles/algorithm.dir/requires
 
