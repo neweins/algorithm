@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/mine.o: src/mine.cpp.o
+src/CatchThatCow.o: src/CatchThatCow.cpp.o
 
-.PHONY : src/mine.o
+.PHONY : src/CatchThatCow.o
 
 # target to build an object file
-src/mine.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.o
-.PHONY : src/mine.cpp.o
+src/CatchThatCow.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/CatchThatCow.cpp.o
+.PHONY : src/CatchThatCow.cpp.o
 
-src/mine.i: src/mine.cpp.i
+src/CatchThatCow.i: src/CatchThatCow.cpp.i
 
-.PHONY : src/mine.i
+.PHONY : src/CatchThatCow.i
 
 # target to preprocess a source file
-src/mine.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.i
-.PHONY : src/mine.cpp.i
+src/CatchThatCow.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/CatchThatCow.cpp.i
+.PHONY : src/CatchThatCow.cpp.i
 
-src/mine.s: src/mine.cpp.s
+src/CatchThatCow.s: src/CatchThatCow.cpp.s
 
-.PHONY : src/mine.s
+.PHONY : src/CatchThatCow.s
 
 # target to generate assembly for a file
-src/mine.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/mine.cpp.s
-.PHONY : src/mine.cpp.s
+src/CatchThatCow.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/CatchThatCow.cpp.s
+.PHONY : src/CatchThatCow.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/mine.o"
-	@echo "... src/mine.i"
-	@echo "... src/mine.s"
+	@echo "... src/CatchThatCow.o"
+	@echo "... src/CatchThatCow.i"
+	@echo "... src/CatchThatCow.s"
 .PHONY : help
 
 

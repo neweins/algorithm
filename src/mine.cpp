@@ -26,117 +26,82 @@
 
 using namespace std;
 
+int MIN = 10000;
 int Y; //N행 개수
 int X; //M열 개수
 int mine[100+10][100+10]; // 미로배열
+vector<pair<int, int>> adj[100+10][100+10]; // adj[행][열] = pair(행, 열)
 
-vector<int> adj[10000+10]; 
-
-int dfs(int start)
+int dfs(int y, int x)
 {
-    int min=1000000000000000;
-    stack<int> s; 
-    int visited[100+10] = {0,};
+    // 시간 복잡도 증가로 time out 발생할 수 있다.
+    // 최단 거리 문제는 bfs로 풀자
+}
 
-    s.push(start); // 시작 정점
+int bfs(int y, int x)
+{
+    queue<pair<int, int>> que; 
+    int visited[100+10][100+10]={0,};
 
-    while(!s.empty()){
-        int v = s.top();
-        s.pop();
-
-        if(visited[v] == 0){
-            visited[v] = 1; // pop할때 방문체크
-            if(mine[Y][X] == v){
-                ????
-            }
-            //printf("%d->", v);
-        }
+    que.push(make_pair(y,x)); // 시작 정점
+    visited[y][x] = 1; // push할 때 방문체크
     
-        for(size_t i=0; i<adj[v].size(); ++i){
-            if(visited[adj[v][i]] == 0){
-                s.push(adj[v][i]);
-            }
-        }
-    } 
-
-    return ; 
-}
-
-int bfs(int start)
-{
-    queue<int> que; 
-    int visited[1000+10]={0,};
-
-    que.push(start); // 시작 정점
-    visited[start] = 1; // push할 때 방문체크
-
     while(!que.empty()){
-        int v = que.front();
+        pair<int,int> v = que.front();
         que.pop();
-        if(mine[Y][X] == v){
-           ????
-        }
-        // printf("%d->", v);
-
-        for(size_t i=0; i<adj[v].size(); ++i){
-            if(visited[adj[v][i]] == 0){ 
-                que.push(adj[v][i]);
-                visited[adj[v][i]] =1;
+        
+        if(v.first == Y && v.second == X){
+            if(MIN > visited[v.first][v.second]){
+                MIN = visited[v.first][v.second];
             }
+        }
+
+        for(size_t i=0; i<adj[v.first][v.second].size(); ++i){
+            if(visited[adj[v.first][v.second][i].first][adj[v.first][v.second][i].second] == 0)
+                que.push(make_pair(adj[v.first][v.second][i].first, adj[v.first][v.second][i].second));
+                visited[adj[v.first][v.second][i].first][adj[v.first][v.second][i].second] = visited[v.first][v.second]+1;
+                
         }
     }
 
-    return ;
-}
-
-int ascending_order(int a, int b){
-    return a < b; // 오름차순
-}
-int descending_order(int a, int b){
-    return a > b; // 내림차순
-}
-int main()
-{
-    int count =1;
-    scanf("%d %d", &Y, &X);
-    for(int y=1; y<=Y ; ++y){
-        for(int x=1; x<=X; ++x){
-            scanf("%1d", &mine[y][x]);
-            if(mine[y][x] !=0){ 
-                mine[y][x] = count;
-                count++;
-            }
-        }
-    }
-
-    // //debug
-    // for(int y=1; y<=Y ; ++y){
+    // for(int y=1; y<=Y; ++y){
     //     for(int x=1; x<=X; ++x){
-    //        printf("%d ", mine[y][x]);
+    //         printf("%d ", visited[y][x]);
     //     }
     //     printf("\n");
     // }
 
+    return MIN;
+}
+
+int main()
+{
+    scanf("%d %d", &Y, &X);
+    for(int y=1; y<=Y ; ++y){
+        for(int x=1; x<=X; ++x){
+            scanf("%1d", &mine[y][x]);
+        }
+    }
+
     //make adjacent list
     for(int y=1; y<=Y; ++y){
         for(int x=1; x<=X; ++x){
-            if(mine[y][x] == 1){
-                if(mine[y-1][x] ==1){
-                    adj
-                }
-                if(mine[y+1][x] ==1){
+            if(mine[y][x] != 0){
+                if(y-1 >=1 && y-1<=Y && x>=1 && x<=X)
+                    adj[y][x].push_back(make_pair(y-1,x));
 
-                }
-                if(mine[y][x-1] ==1){
+                if(y+1 >=1 && y+1<=Y && x>=1 && x<=X)
+                    adj[y][x].push_back(make_pair(y+1,x));
 
-                }
-                if(mine[y][x+1]==1){
+                if(y >=1 && y<=Y && x-1>=1 && x-1<=X)
+                    adj[y][x].push_back(make_pair(y,x-1));
 
-                }
+                if(y >=1 && y <=Y && x+1>=1 && x+1<=X)
+                    adj[y][x].push_back(make_pair(y,x+1));
             }
         }
     }
 
-
+    printf("%d",bfs(1,1));
 }
 

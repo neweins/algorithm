@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/mine.cpp
+/home/joongkeun/algorithm/src/CatchThatCow.cpp
 iostream
 -
 stdio.h
