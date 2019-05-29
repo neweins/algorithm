@@ -26,47 +26,68 @@ using namespace std;
 int N; // start point
 int K; // location of the cow
 
-int line[100000+10];
 vector<int> adj[100000+10];
-int visit[100000+10];
+long long visit[100000+10];
+long long MIN = INT32_MAX;
 
 void dfs()
 {
-
+    // 최단 시간 문제이므로
+    // time out 발생할 수 있음.
 }
 
-int bfs(int s)
+long long bfs(int s)
 {
     queue<int> que; 
 
     que.push(s);
+    if(visit[s] == 0){
+        visit[s] =1; // return시 이동 횟수에서 1을 빼야함.
+    }
 
-    return 0;
+    while(!que.empty()){
+        int v = que.front();
+        que.pop();
+
+        if(v == K){
+            if(MIN > visit[v]){
+                MIN = visit[v];
+            }
+        }
+
+        for(size_t i=0; i<adj[v].size(); ++i){
+            if(visit[adj[v][i]] == 0){
+                visit[adj[v][i]] =visit[v]+1;
+                que.push(adj[v][i]);
+            }
+        }
+    }
+
+    return MIN-1; //처음 시작시 visit가 1부터 시작했으므로 이동횟수에서 1을 빼야 한다.
 }
 
 int main()
 {
-    
     scanf("%d %d", &N, &K);
 
-    for(int i=1; i<=100000; ++i){
-        if(i-1 >=1 && i-1 <=100000){
+    for(int i=0; i<=100000; ++i){
+        if(i-1 >=0 && i-1 <=100000){
             // 무향(양방향)이다.
             adj[i].push_back(i-1);
             adj[i-1].push_back(i);
         }
-        if(i+1 >=1 && i+1 <=100000){
+        if(i+1 >=0 && i+1 <=100000){
             // 무향(양방향)이다.
             adj[i].push_back(i+1); 
             adj[i+1].push_back(i);
         }
-        if(2*i >=1 && 2*i <=100000){
+        if(2*i >=0 && 2*i <=100000){
             // 방향이 있다.
             adj[i].push_back(2*i); 
         }
     }
 
-    printf("%d",bfs(N));
+    printf("%lld",bfs(N));
 
 }
 
