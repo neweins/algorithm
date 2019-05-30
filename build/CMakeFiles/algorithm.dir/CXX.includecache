@@ -6,16 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/CatchThatCow.cpp
-iostream
+/home/joongkeun/algorithm/src/tomato.cpp
+stdint.h
 -
 stdio.h
 -
-vector
--
 queue
 -
-stack
+vector
 -
 algorithm
 -

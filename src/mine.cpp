@@ -87,17 +87,34 @@ int main()
     for(int y=1; y<=Y; ++y){
         for(int x=1; x<=X; ++x){
             if(mine[y][x] != 0){
-                if(y-1 >=1 && y-1<=Y && x>=1 && x<=X)
-                    adj[y][x].push_back(make_pair(y-1,x));
+                if(y-1 >=1 && y-1<=Y && x>=1 && x<=X){
+                    if(mine[y-1][x] != 0){
+                        adj[y][x].push_back(make_pair(y-1,x));
+                        adj[y-1][x].push_back(make_pair(y,x));
+                    }
+                }
+                if(y+1 >=1 && y+1<=Y && x>=1 && x<=X){
+                    if(mine[y+1][x] !=0){
+                        adj[y][x].push_back(make_pair(y+1,x));
+                        adj[y+1][x].push_back(make_pair(y,x));     
+                    }
+                }
 
-                if(y+1 >=1 && y+1<=Y && x>=1 && x<=X)
-                    adj[y][x].push_back(make_pair(y+1,x));
+                if(y >=1 && y<=Y && x-1>=1 && x-1<=X){
+                    if(mine[y][x-1] !=0){
+                        adj[y][x].push_back(make_pair(y,x-1));
+                        adj[y][x-1].push_back(make_pair(y,x));
+                    }
 
-                if(y >=1 && y<=Y && x-1>=1 && x-1<=X)
-                    adj[y][x].push_back(make_pair(y,x-1));
+                }
 
-                if(y >=1 && y <=Y && x+1>=1 && x+1<=X)
-                    adj[y][x].push_back(make_pair(y,x+1));
+                if(y >=1 && y <=Y && x+1>=1 && x+1<=X){
+                    if(mine[y][x+1] != 0){
+                        adj[y][x].push_back(make_pair(y,x+1));
+                        adj[y][x+1].push_back(make_pair(y,x));
+                    }
+
+                }
             }
         }
     }
