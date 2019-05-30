@@ -38,8 +38,8 @@ int X;// 가로
 int box[1000+10][1000+10]; // 토마토 박스
 vector<pair<int,int>> adj[1000+10][1000+10]; // 좌표값을 가지는 인접 리스트
 vector<pair<int,int>> start;// 익은 토마토 좌표 배열
-int MAX_DAY = 0;
-int visit[1000+10][1000+10];
+int ANS = 0;
+int visit[1000+10][1000+10]={0,};
 
 int dfs(){
     // 최소 날짜 구하는 것이므로 
@@ -48,7 +48,7 @@ int dfs(){
 
 // ******중요******
 // 1. bfs는 push할때 방문한다.
-// 2. bfs는 모든 정점이 탐색되는 시점은 pop할 때이다.
+// 2. 코드상에서 모든 정점이 누락없이 탐색되는 위치는 pop할 때이다.
 int bfs(vector<pair<int,int>> s)
 {
     queue<pair<int,int>> que;
@@ -63,8 +63,8 @@ int bfs(vector<pair<int,int>> s)
         que.pop();
 
         // get result
-        if(MAX_DAY < visit[v.first][v.second]){
-            MAX_DAY = visit[v.first][v.second];
+        if(ANS < visit[v.first][v.second]){
+            ANS = visit[v.first][v.second];
         }
 
         for(size_t i=0; i<adj[v.first][v.second].size(); ++i){
@@ -74,18 +74,35 @@ int bfs(vector<pair<int,int>> s)
             }
         }
     }
-    return MAX_DAY-1;
+
+
+    // 익지 않은 토마토가 있는가? 
+    // stl 이진 검색(이분탐색) 사용
+    for(int y=1; y<=Y; ++y){
+        vector<int> vvisit;
+        for(int x=1; x<=X; ++x){
+            vvisit.push_back(visit[y][x]);
+        }
+        sort(vvisit.begin(), vvisit.end());
+        if(binary_search(vvisit.begin(), vvisit.end(), 0)){
+            return -1;
+        }
+    }
+
+    return ANS-1;
 }
 
 int main()
 {
-    int ans=0;
     scanf("%d %d",&X, &Y);
     for(int y=1; y<=Y; ++y){
         for(int x=1; x<=X; ++x){
             scanf("%d", &box[y][x]);
             if(box[y][x] == 1){
                 start.push_back(make_pair(y,x)); 
+            }
+            else if(box[y][x] == -1){
+                visit[y][x] = -1;
             }
         }
     }
@@ -97,39 +114,30 @@ int main()
                 if(y-1>=1 && y-1 <=Y && x>=1 && x<=X){
                     if(box[y-1][x] != -1){
                         adj[y][x].push_back(make_pair(y-1,x)); 
-                        adj[y-1][x].push_back(make_pair(y,x));
+                        // adj[y-1][x].push_back(make_pair(y,x)); //모든 정점에 대해 간선 연결 확인하기 때문에 필요 없다.
                     }
-                    
                 }
                 if(y+1 >= 1 && y+1 <=Y && x>=1 && x<= X){
                     if(box[y+1][x] != -1){
-                        adj[y][x].push_back(make_pair(y+1, x));
-                        adj[y+1][x].push_back(make_pair(y, x));
+                        adj[y][x].push_back(make_pair(y+1, x)); 
+                        // adj[y+1][x].push_back(make_pair(y, x)); //모든 정점에 대해 간선 연결 확인하기 때문에 필요 없다.
                     }
                 }
                 if(y >=1 && y<=Y && x-1 >=1 && x-1 <=X){
                     if(box[y][x-1] != -1){
-                        adj[y][x].push_back(make_pair(y, x-1));
-                        adj[y][x-1].push_back(make_pair(y,x));
+                        adj[y][x].push_back(make_pair(y, x-1)); 
+                        // adj[y][x-1].push_back(make_pair(y,x)); //모든 정점에 대해 간선 연결 확인하기 때문에 필요 없다.
                     }
                 }
                 if(y>=1 && y<=Y && x+1>=1 && x+1<=X){
                     if(box[y][x+1] != -1){
-                        adj[y][x].push_back(make_pair(y, x+1));
-                        adj[y][x+1].push_back(make_pair(y,x));
+                        adj[y][x].push_back(make_pair(y, x+1)); 
+                        // adj[y][x+1].push_back(make_pair(y,x)); //모든 정점에 대해 간선 연결 확인하기 때문에 필요 없다.
                     }
-                }
-                
-                // 연결된 간선이 없으면 토마토는 익지 않는다.
-                if(adj[y][x].size() == 0 && box[y][x] == 0){
-                    ans = -1;
                 }
             }
         }
     }
+    printf("%d", bfs(start));
 
-    if(ans != -1)
-        printf("%d", bfs(start));
-    else
-        printf("-1");
 }
