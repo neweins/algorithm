@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/tomato.cpp
-stdint.h
--
+/home/joongkeun/algorithm/src/organicCabbage.cpp
 stdio.h
 -
 queue

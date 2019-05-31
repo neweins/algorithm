@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/tomato.o: src/tomato.cpp.o
+src/organicCabbage.o: src/organicCabbage.cpp.o
 
-.PHONY : src/tomato.o
+.PHONY : src/organicCabbage.o
 
 # target to build an object file
-src/tomato.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/tomato.cpp.o
-.PHONY : src/tomato.cpp.o
+src/organicCabbage.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/organicCabbage.cpp.o
+.PHONY : src/organicCabbage.cpp.o
 
-src/tomato.i: src/tomato.cpp.i
+src/organicCabbage.i: src/organicCabbage.cpp.i
 
-.PHONY : src/tomato.i
+.PHONY : src/organicCabbage.i
 
 # target to preprocess a source file
-src/tomato.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/tomato.cpp.i
-.PHONY : src/tomato.cpp.i
+src/organicCabbage.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/organicCabbage.cpp.i
+.PHONY : src/organicCabbage.cpp.i
 
-src/tomato.s: src/tomato.cpp.s
+src/organicCabbage.s: src/organicCabbage.cpp.s
 
-.PHONY : src/tomato.s
+.PHONY : src/organicCabbage.s
 
 # target to generate assembly for a file
-src/tomato.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/tomato.cpp.s
-.PHONY : src/tomato.cpp.s
+src/organicCabbage.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/organicCabbage.cpp.s
+.PHONY : src/organicCabbage.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/tomato.o"
-	@echo "... src/tomato.i"
-	@echo "... src/tomato.s"
+	@echo "... src/organicCabbage.o"
+	@echo "... src/organicCabbage.i"
+	@echo "... src/organicCabbage.s"
 .PHONY : help
 
 
