@@ -1,1 +1,1 @@
-/usr/bin/g++-5    -Wall -Wfatal-errors -std=c++11 -g -g   CMakeFiles/algorithm.dir/src/organicCabbage.cpp.o  -o algorithm -rdynamic 
+/usr/bin/g++-5    -Wall -Wfatal-errors -std=c++11 -g -g   CMakeFiles/algorithm.dir/src/laboratory.cpp.o  -o algorithm -rdynamic 

@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/joongkeun/algorithm/build",
-  "command": "/usr/bin/g++-5    -I/home/joongkeun/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/algorithm.dir/src/organicCabbage.cpp.o -c /home/joongkeun/algorithm/src/organicCabbage.cpp",
-  "file": "/home/joongkeun/algorithm/src/organicCabbage.cpp"
+  "command": "/usr/bin/g++-5    -I/home/joongkeun/algorithm/src   -Wall -Wfatal-errors -std=c++11 -g -g   -o CMakeFiles/algorithm.dir/src/laboratory.cpp.o -c /home/joongkeun/algorithm/src/laboratory.cpp",
+  "file": "/home/joongkeun/algorithm/src/laboratory.cpp"
 }
 ]

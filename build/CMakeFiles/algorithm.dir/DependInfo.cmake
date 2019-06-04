@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/joongkeun/algorithm/src/organicCabbage.cpp" "/home/joongkeun/algorithm/build/CMakeFiles/algorithm.dir/src/organicCabbage.cpp.o"
+  "/home/joongkeun/algorithm/src/laboratory.cpp" "/home/joongkeun/algorithm/build/CMakeFiles/algorithm.dir/src/laboratory.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

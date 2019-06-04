@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/organicCabbage.o: src/organicCabbage.cpp.o
+src/laboratory.o: src/laboratory.cpp.o
 
-.PHONY : src/organicCabbage.o
+.PHONY : src/laboratory.o
 
 # target to build an object file
-src/organicCabbage.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/organicCabbage.cpp.o
-.PHONY : src/organicCabbage.cpp.o
+src/laboratory.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/laboratory.cpp.o
+.PHONY : src/laboratory.cpp.o
 
-src/organicCabbage.i: src/organicCabbage.cpp.i
+src/laboratory.i: src/laboratory.cpp.i
 
-.PHONY : src/organicCabbage.i
+.PHONY : src/laboratory.i
 
 # target to preprocess a source file
-src/organicCabbage.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/organicCabbage.cpp.i
-.PHONY : src/organicCabbage.cpp.i
+src/laboratory.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/laboratory.cpp.i
+.PHONY : src/laboratory.cpp.i
 
-src/organicCabbage.s: src/organicCabbage.cpp.s
+src/laboratory.s: src/laboratory.cpp.s
 
-.PHONY : src/organicCabbage.s
+.PHONY : src/laboratory.s
 
 # target to generate assembly for a file
-src/organicCabbage.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/organicCabbage.cpp.s
-.PHONY : src/organicCabbage.cpp.s
+src/laboratory.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/laboratory.cpp.s
+.PHONY : src/laboratory.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/organicCabbage.o"
-	@echo "... src/organicCabbage.i"
-	@echo "... src/organicCabbage.s"
+	@echo "... src/laboratory.o"
+	@echo "... src/laboratory.i"
+	@echo "... src/laboratory.s"
 .PHONY : help
 
 
