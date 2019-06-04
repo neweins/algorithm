@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/laboratory.cpp
+/home/joongkeun/algorithm/src/laboratory2.cpp
 stdio.h
 -
 queue
 -
 vector
+-
+list
 -
 algorithm
 -

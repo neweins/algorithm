@@ -63,7 +63,6 @@
 using namespace std;
 
 int numOne;
-int numTwo;
 int map[8+2][8+2];
 
 vector<pair<int,int>> adj[8+2][8+2];
@@ -78,8 +77,9 @@ int bfs()
 {
     int count=0;
     int visit[8+2][8+2]={{0,},};
-
     queue<pair<int,int>> que;
+
+    //시작점들을 que에 모두 넣는다.
     for(size_t i=0; i<start.size(); ++i){
         que.push(make_pair(start[i].first, start[i].second));
         visit[start[i].first][start[i].second] = 1;
@@ -165,11 +165,12 @@ int main()
             scanf("%1d", &map[y][x]);
             if(map[y][x] == 2){
                 start.push_back(make_pair(y,x));
-                numTwo++;
             }
             if(map[y][x] == 1) numOne++;
         }
     }
+
+    
 
     //순차 탐색(N^6  ㅠㅠ)
     for(int y1=1; y1<=Y; ++y1){
@@ -186,18 +187,18 @@ int main()
                                 for(int x3=1; x3<=X; ++x3){
                                     if(map[y3][x3] == 0){
                                         map[y3][x3] =1;
-                                        make_adj();
+                                        make_adj();// 벽 추가
                                         bfs();
-                                        clear_adj();
+                                        clear_adj();//벽 제거
                                         map[y3][x3] =0;
                                     }//if
                                 }
                             }
-                             map[y2][x2] = 0;
+                            map[y2][x2] = 0;
                         }//if
                     }
                 }
-                map[y1][x1] =0;
+                map[y1][x1] =0; 
             }//if
         }
     }
