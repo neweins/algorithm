@@ -123,32 +123,32 @@ algorithm/fast:
 	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/build
 .PHONY : algorithm/fast
 
-src/laboratory2.o: src/laboratory2.cpp.o
+src/warehouse.o: src/warehouse.cpp.o
 
-.PHONY : src/laboratory2.o
+.PHONY : src/warehouse.o
 
 # target to build an object file
-src/laboratory2.cpp.o:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/laboratory2.cpp.o
-.PHONY : src/laboratory2.cpp.o
+src/warehouse.cpp.o:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/warehouse.cpp.o
+.PHONY : src/warehouse.cpp.o
 
-src/laboratory2.i: src/laboratory2.cpp.i
+src/warehouse.i: src/warehouse.cpp.i
 
-.PHONY : src/laboratory2.i
+.PHONY : src/warehouse.i
 
 # target to preprocess a source file
-src/laboratory2.cpp.i:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/laboratory2.cpp.i
-.PHONY : src/laboratory2.cpp.i
+src/warehouse.cpp.i:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/warehouse.cpp.i
+.PHONY : src/warehouse.cpp.i
 
-src/laboratory2.s: src/laboratory2.cpp.s
+src/warehouse.s: src/warehouse.cpp.s
 
-.PHONY : src/laboratory2.s
+.PHONY : src/warehouse.s
 
 # target to generate assembly for a file
-src/laboratory2.cpp.s:
-	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/laboratory2.cpp.s
-.PHONY : src/laboratory2.cpp.s
+src/warehouse.cpp.s:
+	$(MAKE) -f CMakeFiles/algorithm.dir/build.make CMakeFiles/algorithm.dir/src/warehouse.cpp.s
+.PHONY : src/warehouse.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... algorithm"
-	@echo "... src/laboratory2.o"
-	@echo "... src/laboratory2.i"
-	@echo "... src/laboratory2.s"
+	@echo "... src/warehouse.o"
+	@echo "... src/warehouse.i"
+	@echo "... src/warehouse.s"
 .PHONY : help
 
 

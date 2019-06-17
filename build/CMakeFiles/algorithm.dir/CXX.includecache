@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/joongkeun/algorithm/src/laboratory2.cpp
-stdio.h
--
+/home/joongkeun/algorithm/src/warehouse.cpp
 queue
 -
 vector
 -
-list
+stdio.h
 -
-algorithm
+iostream
 -
 
