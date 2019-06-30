@@ -1,3 +1,4 @@
+// josephus problem same as backjoon queue
 #include <stdio.h>
 
 #define MAXQ (1<<16) //65536

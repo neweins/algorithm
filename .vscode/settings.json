@@ -3,5 +3,6 @@
         "limits": "cpp",
         "algorithm": "cpp",
         "iostream": "cpp"
-    }
+    },
+    "cmake.configureOnOpen": false
 }

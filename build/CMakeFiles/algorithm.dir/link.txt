@@ -1,1 +1,0 @@
-/usr/bin/g++-5    -Wall -Wfatal-errors -std=c++11 -g -g   CMakeFiles/algorithm.dir/src/warehouse.cpp.o  -o algorithm -rdynamic 
