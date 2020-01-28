@@ -105,27 +105,30 @@ int main()
 
     //make adjacent list
     // 순차탐색보다 더 시간복잡도가 낮은 방법이 없을까? 
+    // 순차탐색에서는 양방향 그래프 고려를 하지 않아도 된다.(이미 모든 포인트에서 탐색을 실시하므로... 오히려 중복 삽입된다.)
     for(int y=1; y<=N; ++y){
         for(int x=1; x<=N; ++x){
             if(map[y][x] != 0){
+                //위
                 if(y-1>=1 && y-1<=N && x>=1 && x <= N){
                     if(map[y-1][x] != 0){
                         adj[y][x].push_back(make_pair(y-1, x));
+                        // adj[y-1][x].push_back(make_pair(y, x)); // 순차 탐색이므로 할 필요없다.
                     }
                 }
-
+                // 아래
                 if(y+1 >=1 && y+1 <=N && x>=1 && x<=N){
                     if(map[y+1][x] != 0){
                         adj[y][x].push_back(make_pair(y+1, x));
                     }
                 }
-
+                //좌
                 if(y>=1 && y<=N && x-1>=1 && x-1<=N){
                     if(map[y][x-1] != 0){
                         adj[y][x].push_back(make_pair(y,x-1));
                     }
                 }
-
+                //우
                 if(y>=1 && y<=N && x+1 >=1 && x+1 <=N){
                     if(map[y][x+1] != 0){
                         adj[y][x].push_back(make_pair(y,x+1));

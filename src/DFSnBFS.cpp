@@ -13,7 +13,7 @@ using namespace std;
 int N; //정점의 개수
 int M; //간선의 개수
 int V; //시작 정점
-vector<int> adj[10000+10]; //간선의 갯수와 같다.
+vector<int> adj[10000+10]; //[정점 갯수]
 
 int recur_visited[1000+10]={0,};
 void recursive_dfs(int v)
@@ -37,8 +37,8 @@ void dfs()
         int v = s.top();
         s.pop();
 
-        if(visited[v] ==0){
-            visited[v] =1; // pop할때 방문체크
+        if(visited[v] == 0){
+            visited[v] = 1; // pop할때 방문체크
             printf("%d ", v);
         }
     
@@ -109,4 +109,5 @@ int main()
     bfs();
 
 }
+
 
