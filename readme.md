@@ -15,7 +15,7 @@
   <pre><code> 
   void DFS(...){
     ...
-    DFS();
+    DFS(...);
     ...
   }
   </code></pre>
